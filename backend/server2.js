@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173", "https://test-room-site.onrender.com"] // your React app
+    origin: ["http://localhost:5173", "https://test-room-site.onrender.com"], // your React app
     methods: ["GET", "POST"],
   },
 });
