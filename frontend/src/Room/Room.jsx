@@ -29,7 +29,7 @@ function Room() {
 
     useEffect(() => {
         if (check === true) {
-            socketRef.current = io("http://localhost:3000");
+            socketRef.current = io("https://test-room-y2js.onrender.com");
 
             socketRef.current.on("connect", () => {
                 console.log("connected to server");
