@@ -1,0 +1,90 @@
+body {
+  background-color: #ab4d4d;
+  font-family: Arial, sans-serif;
+}
+
+#main {
+  border: 2px solid black;
+  width: 100%;
+  /* background-color: violet; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* place-items: center; */
+  overflow: hidden;
+  /* justify-content: center; */
+}
+
+#circle {
+  height: 15px;
+  width: 15px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  background-color: red;
+}
+h2 {
+  margin: 5px 10px;
+}
+
+#user-name {
+  height: 30px;
+  width: 100%;
+  font-size: 18px;
+  color: blanchedalmond;
+  /* margin: 5px 5px; */
+}
+
+textarea {
+  height: 200px;
+  width: 100%;
+  overflow: auto;
+}
+#msgs {
+  height: 300px;
+  width: 300px;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  
+  /* overflow-x: hidden; */
+}
+
+input {
+  height: 20px;
+  border: none;
+  border-radius: 2px;
+}
+
+#msg-input {
+  height: 100%;
+}
+
+#send {
+  height: 30px;
+  /* background-color: blueviolet; */
+}
+
+#send input {
+  height: 30px;
+  width: 70%;
+  font-size: 18px;
+  color: blanchedalmond;
+}
+#send button {
+  height: 30px;
+  width: 30%;
+}
+
+@media (max-width: 600px) {
+  #main {
+    /* height: ; */
+    width: 80%;
+  }
+
+  #send {
+    max-width: 100%;
+  }
+
+  #msg-input {
+    width: 70%;
+  }
+}
